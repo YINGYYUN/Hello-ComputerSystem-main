@@ -16,9 +16,7 @@ def my_run():
             print(call.arg, end='', flush=True)
         elif call.syscall == SyscallType.SYS_WRITE_DOUBLE:
             print(call.arg, end='', flush=True)
-            print()
             print(call.arg, end='', flush=True)
         elif call.syscall == SyscallType.SYS_FORK:
             new_proc = copy.copy(current)
             process_push(new_proc)
-    print()
